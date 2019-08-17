@@ -1,6 +1,6 @@
- # LAB - 08
+ # LAB - 05
 
-## LAB: Class 08
+## LAB: Buffers - Data Modeling With NoSQL Database
 
 ### Pratiibh Bassi
 
