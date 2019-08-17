@@ -6,7 +6,7 @@
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
+* [travis](https://www.travis-ci.com/pratiibh-401-advanced-javascript/lab-05)
 
 
 
