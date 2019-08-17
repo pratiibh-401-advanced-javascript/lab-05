@@ -1,5 +1,5 @@
 const Categories = require('../../models-modular/categories/categories.js');
-// let categories = new Categories();
+let categories = new Categories();
 
 const supergoose = require('../supergoose.js');
 
@@ -11,7 +11,7 @@ describe('Categories Model', () => {
   // How might we repeat this to check on types?
 
   it('can post() a new category', () => {
-    let obj = { name: 'Test Category' };
+    let obj = { name: 'Test Category', description: 'Category for testing' };
     return categories.create(obj)
       .then(record => {
         Object.keys(obj).forEach(key => {
@@ -22,7 +22,7 @@ describe('Categories Model', () => {
   });
 
   it('can get() a category', () => {
-    let obj = { name: 'Test Category' };
+    let obj = { name: 'Test Category', description: 'Category for testing' };
     categories.create(obj)
       .then(record => {
         categories.get(record._id)
@@ -36,7 +36,7 @@ describe('Categories Model', () => {
   });
 
   it('can delete() a category', () => {
-    let obj = { name: 'Test Category' };
+    let obj = { name: 'Test Category', description: 'Category for testing' };
     categories.create(obj)
       .then(record => {
         return categories.delete(record._id)
@@ -48,7 +48,7 @@ describe('Categories Model', () => {
   });
 
   it('can update a category', () => {
-    let obj = { name: 'Test Category', zoo: true };
+    let obj = { name: 'Test Category', description: 'Category for testing', zoo: true };
     categories.create(obj)
       .then(record => {
         categories.update(record.id, { name: 'New Test Category', id: 55 })
