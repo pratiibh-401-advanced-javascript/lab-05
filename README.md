@@ -5,7 +5,7 @@
 ### Pratiibh Bassi
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/pratiibh-401-advanced-javascript/lab-05/pull/2)
 * [travis](https://www.travis-ci.com/pratiibh-401-advanced-javascript/lab-05)
 
 
